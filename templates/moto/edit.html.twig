@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} #{{moto.id ~" " ~ moto.marque}}{% endblock %}
+
+{% block body %}
+
+<h1>{{moto.nom | title}}<h1> 
+{{form_start(monForm)}}
+<div class="d-flex gap-3">
+{{form_row(monForm.marque)}}
+
+</div>
+<div class="d-flex gap-3">
+{{form_row(monForm.nom)}}
+{{form_row(monForm.couleur)}}
+</div>
+<div >
+{{form_row(monForm.annee)}}
+{{form_row(monForm.prix)}}
+</div>
+
+{{form_end(monForm)}}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}#{{moto.id}}#{{moto.nom}}{% endblock %}
+
+{% block body %}
+
+<h3>Voici l'identification de votre motos {{moto.id}}<h3>
+<p> Nom: {{moto.Nom}}</p>
+<p> Marque: {{moto.marque}}</p>
+<p> Couleur: {{moto.couleur}} </p>
+<p> Année: {{moto.annee}}</p>
+<p> Prix: {{moto.prix}}</p>
+{% endblock %}
